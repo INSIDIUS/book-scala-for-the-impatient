@@ -2,7 +2,7 @@ package org.cbi.scala_for_the_impatient.unit2
 
 import org.specs2.Specification
 
-class HelloWorldSpec extends Specification { def is = s2"""
+class HelloWorldSpec extends Specification { override def is = s2"""
 
  This is a specification to check the 'Hello world' string
 
