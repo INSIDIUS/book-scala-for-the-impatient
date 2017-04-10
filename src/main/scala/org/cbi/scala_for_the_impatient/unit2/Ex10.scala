@@ -1,6 +1,6 @@
 package org.cbi.scala_for_the_impatient.unit2
 
-object Ex2_10 {
+object Ex10 {
 
   def mypow(x: Double, n: Int): Double = {
     if (n > 0 && n % 2 == 0) math.pow(mypow(x, n / 2), 2)
