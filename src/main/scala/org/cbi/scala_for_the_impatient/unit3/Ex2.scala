@@ -8,7 +8,7 @@ object Ex2 {
     arr
   }
 
-  private def swap(arr: Array[Int], first: Int, second: Int) = {
+  private def swap(arr: Array[Int], first: Int, second: Int) {
     val tmp = arr(first)
     arr(first) = arr(second)
     arr(second) = tmp
