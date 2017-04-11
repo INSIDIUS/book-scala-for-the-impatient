@@ -5,6 +5,6 @@ import org.specs2.mutable.Specification
 
 class Ex5Test extends Specification {
   "U2 Ex5Test" should {
-    "countdown must print countdown" in { countdown(10); ok }
+    "countdown must print countdown from 10 to 0" in { countdown(10); ok }
   }
 }
