@@ -6,6 +6,6 @@ import org.specs2.mutable.Specification
 class Ex9Test extends Specification {
 
   "U2 Ex9Test" should {
-    "product return be equal" in { product("Hello") mustEqual 9415087488L }
+    "product return be equal to 9415087488L" in { product("Hello") mustEqual 9415087488L }
   }
 }
