@@ -7,7 +7,7 @@ import scala.collection.mutable.ArrayBuffer
 object Ex6Test extends Specification {
 
   "Ex6Test" should {
-    "returned array equal" in { Ex6.sorted_desc_arr() mustEqual Array(8, 3, 3, -3, -4) }
-    "returned arrayBuffer equal" in { Ex6.sorted_desc_arrbuff() mustEqual ArrayBuffer(8, 3, 3, -3, -4) }
+    "returned array equal" in { Ex6.arrSortedDesc mustEqual Array(8, 3, 3, -3, -4) }
+    "returned arrayBuffer equal" in { Ex6.arrbuffSortedDesc mustEqual ArrayBuffer(8, 3, 3, -3, -4) }
   }
 }
