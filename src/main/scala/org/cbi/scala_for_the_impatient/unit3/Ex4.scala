@@ -4,7 +4,7 @@ import scala.collection.mutable.ArrayBuffer
 
 object Ex4 {
 
-  def arr() = {
+  val arr = {
     val arr = Array(-3, 2, -2, 3, 0, -4, 1, 0)
     val arrResult = ArrayBuffer[Int]()
 
