@@ -12,7 +12,5 @@ object Ex6 {
     arr.reverse
   }
 
-  def sorted_desc_arrbuff() = {
-    ArrayBuffer(3, 3, -4, -3, 8).sorted(Ordering[Int].reverse)
-  }
+  def sorted_desc_arrbuff() = ArrayBuffer(3, 3, -4, -3, 8).sorted(Ordering[Int].reverse)
 }
