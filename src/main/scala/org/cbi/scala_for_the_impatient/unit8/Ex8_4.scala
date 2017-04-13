@@ -10,7 +10,7 @@ object Ex8_4 extends App {
 
   class Bundle {
     private val items = new util.ArrayList[Item]
-//    def price = { var p = 0; for (i <- items :_*) }
+//    def price = { var p = 0; for (i <- items: _*) }
 //    def addItem(item: Item) {items.add(item)}
 
   }
