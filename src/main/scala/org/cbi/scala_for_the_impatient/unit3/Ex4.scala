@@ -2,18 +2,16 @@ package org.cbi.scala_for_the_impatient.unit3
 
 import scala.collection.mutable.ArrayBuffer
 
-object Ex3_4 extends App {
+object Ex4 {
 
-  def ex_3_4_arr() {
-    val arr = Array(-2 to 5: _*)
+  def arr() = {
+    val arr = Array(-3, 2, -2, 3, 0, -4, 1, 0)
     val arrResult = ArrayBuffer[Int]()
 
     arrResult ++= arr.filter(_ > 0)
     arrResult ++= arr.filter(_ < 0)
     arrResult ++= arr.filter(_ == 0)
 
-    println(arrResult.toArray.deep)
+    arrResult.toArray
   }
-
-  ex_3_4_arr()
 }
