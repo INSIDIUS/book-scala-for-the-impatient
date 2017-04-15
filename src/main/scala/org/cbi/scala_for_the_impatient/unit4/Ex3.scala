@@ -1,9 +1,9 @@
 package org.cbi.scala_for_the_impatient.unit4
 
-import scala.collection.mutable
+import scala.collection.immutable.HashMap
 import scala.io.Source
 
-object Ex2 {
+object Ex3 {
 
   val entries = {
 
@@ -11,8 +11,8 @@ object Ex2 {
     val words = source.getLines().mkString(" ").split(" ")
     source.close()
 
-    val entries = mutable.HashMap[String, Int]()
-    for (word <- words) entries(word) = entries.getOrElse(word, 0) + 1
+    var entries = HashMap[String, Int]()
+    for (word <- words) entries += (word -> (entries.getOrElse(word, 0) + 1))
 
     entries
   }
