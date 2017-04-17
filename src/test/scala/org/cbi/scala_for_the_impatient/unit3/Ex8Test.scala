@@ -7,6 +7,6 @@ import scala.collection.mutable.ArrayBuffer
 object Ex8Test extends Specification {
 
   "Ex8Test" should {
-    "returned array equal" in { Ex8.arr mustEqual ArrayBuffer(3, 3, -4, 8) }
+    "returned array is equals" in { Ex8.arr mustEqual ArrayBuffer(3, 3, -4, 8) }
   }
 }

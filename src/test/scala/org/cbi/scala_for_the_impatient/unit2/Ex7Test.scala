@@ -4,6 +4,6 @@ import org.specs2.mutable.Specification
 
 object Ex7Test extends Specification {
   "U2 Ex7Test" should {
-    "fun() return value equal" in { Ex7.value mustEqual 54656 }
+    "fun() return value is equals" in { Ex7.value mustEqual 54656 }
   }
 }
