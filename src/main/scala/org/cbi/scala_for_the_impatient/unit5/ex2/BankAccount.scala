@@ -1,6 +1,6 @@
-package org.cbi.scala_for_the_impatient.unit5
+package org.cbi.scala_for_the_impatient.unit5.ex2
 
-class Ex2_BankAccount() {
+class BankAccount() {
 
   private var bal = 0
 
