@@ -5,6 +5,6 @@ import org.specs2.mutable.Specification
 object Ex10Test extends Specification {
 
   "U4 Ex10Test" should {
-    "zip return equal" in { Ex10.zip mustEqual Map('H' -> 'W', 'e' -> 'o', 'l' -> 'r', 'l' -> 'l', 'o' -> 'd') }
+    "zip return is equals" in { Ex10.zip mustEqual Map('H' -> 'W', 'e' -> 'o', 'l' -> 'r', 'l' -> 'l', 'o' -> 'd') }
   }
 }
