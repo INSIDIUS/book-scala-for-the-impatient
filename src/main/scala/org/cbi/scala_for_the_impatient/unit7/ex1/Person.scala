@@ -7,7 +7,7 @@ package com.horstmann.collection {
 package com.horstmann.impatient {
   package people {
     class Person {
-      collection.MyObject // -- not available here
+//      collection.MyObject // -- not available here
     }
   }
 }
