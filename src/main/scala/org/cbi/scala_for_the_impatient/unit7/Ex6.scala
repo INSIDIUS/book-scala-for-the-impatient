@@ -5,7 +5,7 @@ import java.util.{HashMap => JavaHashMap}
 import scala.collection.JavaConverters._
 import scala.collection.mutable.{HashMap => ScalaMap}
 
-object Ex7 {
+object Ex6 {
 
   val value = {
     val javaMap = new JavaHashMap[String, String]()
