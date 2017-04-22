@@ -4,7 +4,7 @@ import org.specs2.mutable.Specification
 
 object BundleTest extends Specification {
 
-  val booze = Bundle.apply
+  val booze = Bundle()
     .add(SimpleItem(15, "cider"))
     .add(SimpleItem(15, "cider"))
     .add(SimpleItem(15, "cider"))
@@ -12,11 +12,11 @@ object BundleTest extends Specification {
     .add(SimpleItem(15, "beermix"))
     .add(SimpleItem(15, "beermix"))
 
-  val snack = Bundle.apply
+  val snack = Bundle()
     .add(SimpleItem(24, "chips"))
     .add(SimpleItem(30, "nuts"))
 
-  val all = Bundle.apply
+  val all = Bundle()
     .add(booze)
     .add(snack)
 

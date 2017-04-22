@@ -2,7 +2,7 @@ package org.cbi.scala_for_the_impatient.unit8.ex7
 
 import org.specs2.mutable.Specification
 
-class SquareTest extends Specification {
+object SquareTest extends Specification {
 
   "U8 Ex7 SquareTest" should {
     "square (primary constructor) is equals" in {
@@ -15,7 +15,7 @@ class SquareTest extends Specification {
     }
 
     "square (third constructor) is equals" in {
-      Square.apply mustEqual Square(0)
+      Square() mustEqual Square(0)
     }
   }
 }
