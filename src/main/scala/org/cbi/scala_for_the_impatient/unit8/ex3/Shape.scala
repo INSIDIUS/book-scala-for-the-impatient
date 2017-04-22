@@ -10,7 +10,4 @@ case class RightTriangle(a: Int, b: Int) extends Shape { override val square = (
 case class Rectangle(a: Int, b: Int) extends Shape { override val square = a * b }
 
 class Square(override val a: Int) extends Rectangle(a, a)
-
-object Square {
-  def apply(a: Int) = new Square(a)
-}
+object Square { def apply(a: Int) = new Square(a) }
