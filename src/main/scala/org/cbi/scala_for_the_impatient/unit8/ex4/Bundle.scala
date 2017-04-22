@@ -2,7 +2,7 @@ package org.cbi.scala_for_the_impatient.unit8.ex4
 
 import scala.collection.mutable.ArrayBuffer
 
-class Bundle extends Item {
+case class Bundle() extends Item {
 
   val items = ArrayBuffer[Item]()
 
@@ -12,5 +12,3 @@ class Bundle extends Item {
 
   override def description = items map(_.description) mkString ", "
 }
-
-object Bundle { def apply: Bundle = new Bundle() }

@@ -9,5 +9,5 @@ case class Square(_x: Int, _y: Int, _width: Int) extends Rectangle(_x, _y, _widt
 
 object Square {
   def apply(width: Int) = new Square(width)
-  def apply = new Square
+  def apply() = new Square
 }
