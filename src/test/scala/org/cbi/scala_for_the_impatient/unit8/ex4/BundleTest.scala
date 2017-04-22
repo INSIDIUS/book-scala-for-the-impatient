@@ -2,7 +2,7 @@ package org.cbi.scala_for_the_impatient.unit8.ex4
 
 import org.specs2.mutable.Specification
 
-class BundleTest extends Specification {
+object BundleTest extends Specification {
 
   val booze = Bundle.apply
     .add(SimpleItem(15, "cider"))
