@@ -9,6 +9,7 @@ object RightTriangleTest extends Specification {
   "U8 Ex3 RightTriangleTest" should {
     "square is equals" in { shape.square mustEqual 6 }
     "toString is equals" in {
-      shape.toString mustEqual "I'm " + shape.getClass.getSimpleName + " and my square is: " + shape.square }
+      shape.toString mustEqual f"I'm ${shape.getClass.getSimpleName} and my square is ${shape.square}"
+    }
   }
 }
