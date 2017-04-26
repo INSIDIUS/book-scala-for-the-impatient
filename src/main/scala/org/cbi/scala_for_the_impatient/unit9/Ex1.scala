@@ -12,6 +12,6 @@ object Ex1 {
     val revLines = try source.getLines().toList.reverseIterator finally source.close()
 
     val destination = new PrintWriter(file)
-    try revLines foreach (line => destination.write(line + System.lineSeparator)) finally destination.close()
+    try revLines foreach (line => destination write(line + System.lineSeparator)) finally destination close()
   }
 }
