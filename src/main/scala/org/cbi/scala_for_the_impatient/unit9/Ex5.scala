@@ -9,7 +9,8 @@ object Ex5 {
 
   def calculateAndPersistToFile(num: Int, file: File) {
     val destination = new PrintWriter(file)
-    val result = powersOf(num).map(t => t._1 + "\t\t" + t._2 + System.lineSeparator()).mkString
-    destination.write(result)
+    val result = powersOf(num).map(t => f"${t._1.toInt}%10d\t${t._2}" + System.lineSeparator()).mkString
+    destination write result
+    destination close()
   }
 }
