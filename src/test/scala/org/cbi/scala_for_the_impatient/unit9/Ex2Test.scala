@@ -15,9 +15,9 @@ object Ex2Test extends Specification {
 
       val temp = Files.createTempFile("scala", "test").toFile
       val out = new PrintWriter(temp)
-      out.write("hello\tworld\twerwer" + System.lineSeparator +
-        "hello2\tworld2werwrr\tsdfsfsfs" + System.lineSeparator +
-        "hellooooqw\tworld2" + System.lineSeparator)
+      out.write("hello\tworld\twwwwwwwwwwwwwwwwwwwwwwwwww\n" +
+                "hello2\terworld2werwrr\tewrsdfdfgdfgdfgdddfggggfgsfsfs\n" +
+                "hellooooqw\twerworld2")
       out.close()
 
       tabToSpaces(temp)
@@ -25,7 +25,7 @@ object Ex2Test extends Specification {
       Source.fromFile(temp).getLines.foreach(println)
       println()
 
-      Source.fromFile(temp).mkString.length mustEqual 96
+      Source.fromFile(temp).mkString.length mustEqual 146
     }
   }
 }
