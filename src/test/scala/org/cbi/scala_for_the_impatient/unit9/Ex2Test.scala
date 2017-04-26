@@ -11,7 +11,7 @@ import scala.io.Source
 object Ex2Test extends Specification {
 
   "U9 Ex2 Test" should {
-    "tabToSpaces" in {
+    "tabToSpaces works correctly " in {
 
       val temp = Files.createTempFile("scala", "test").toFile
       val out = new PrintWriter(temp)
