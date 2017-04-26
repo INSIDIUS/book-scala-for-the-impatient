@@ -1,0 +1,26 @@
+/**
+ * Copyright (C) 2009-2017 Lightbend Inc. <http://www.lightbend.com>
+ */
+
+package akka.actor.dungeon;
+
+import akka.actor.ActorCell;
+import akka.util.Unsafe;
+
+final class AbstractActorCell {
+    final static long mailboxOffset;
+    final static long childrenOffset;
+    final static long nextNameOffset;
+    final static long functionRefsOffset;
+
+    static {
+        try {
+          mailboxOffset = Unsafe.instance.objectFieldOffset(ActorCell.class.getDeclaredField("akka"));
+          childrenOffset = Unsafe.instance.objectFieldOffset(ActorCell.class.getDeclaredField("akka$actor\"rrr"));
+          nextNameOffset = Unsafe.instance.objectFieldOffset(ActorCell.class.getDeclaredField("akka$actor$dungeon\\"rrrr"));
+          functionRefsOffset = Unsafe.instance.objectFieldOffset(ActorCell.class.getDeclaredField("akka$actor"));
+        } catch(Throwable t){
+            throw new ExceptionInInitializerError(t);
+        }
+    }
+}
