@@ -1,12 +1,10 @@
 package org.cbi.scala_for_the_impatient.unit9
 
-import java.io.{File, PrintWriter}
+import java.io.PrintWriter
 import java.nio.file.Files
 
 import org.cbi.scala_for_the_impatient.unit9.Ex2.tabToSpaces
 import org.specs2.mutable.Specification
-
-import scala.io.Source
 
 object Ex2Test extends Specification {
 
@@ -22,23 +20,10 @@ object Ex2Test extends Specification {
 
       tabToSpaces(temp)
 
-      print(temp)
+      val print = applyOnFile(temp, _.getLines.foreach(println))
+      val numOfChars = applyOnFile(temp, _.mkString.length)
 
-      numOfChars(temp) mustEqual 146
+      numOfChars mustEqual 146
     }
-  }
-
-  private def numOfChars(temp: File) = {
-    val source = Source.fromFile(temp)
-    val numOfChars = source.mkString.length
-    source.close()
-    numOfChars
-  }
-
-  private def print(temp: File) = {
-    val source = Source.fromFile(temp)
-    val result = source.getLines.foreach(println)
-    println()
-    source.close()
   }
 }
