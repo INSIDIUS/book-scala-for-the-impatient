@@ -20,7 +20,11 @@ object Ex1Test extends Specification {
 
       reverseFile(temp)
 
-      Source.fromFile(temp).mkString mustEqual "hello2 world2" + System.lineSeparator + "hello world" + System.lineSeparator
+      val source = Source.fromFile(temp)
+      val result = source.mkString
+      source.close()
+
+      result mustEqual "hello2 world2" + System.lineSeparator + "hello world" + System.lineSeparator
     }
   }
 }
