@@ -5,5 +5,5 @@ import java.io.File
 import scala.io.Source
 
 object Ex3 {
-  def bigWord(file: File) = Source.fromFile(file).getLines().mkString(" ").split(" ").filter(_.length >= 12)
+  def bigWords(source: Source) = source.getLines().mkString(" ").split(" ").filter(_.length >= 12)
 }
