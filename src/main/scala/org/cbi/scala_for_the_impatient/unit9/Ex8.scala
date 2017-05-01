@@ -4,7 +4,7 @@ import scala.io.Source
 
 object Ex8 {
   def getAllImageLinks(source: Source) = {
-    val imgLinkPattern = "(img).+(src)=\"(.*?)\"".r
+    val imgLinkPattern = "(<img).+(src)=\"(.*?)\"".r
     for (imgLinkPattern(_, _, link) <- imgLinkPattern.findAllIn(source.mkString)) yield link
   }
 }
