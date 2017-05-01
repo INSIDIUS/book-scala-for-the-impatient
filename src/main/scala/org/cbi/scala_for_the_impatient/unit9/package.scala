@@ -6,8 +6,13 @@ import scala.io.Source
 
 package object unit9 {
 
-  def applyOnFile(temp: File, f: (Source) => Any) = {
-    lazy val source = Source.fromFile(temp)
+  def applyOnUrl(url: String, f: (Source) => Any) = {
+    lazy val source = Source.fromURL(url)
+    applyOnSource(source, f)
+  }
+
+  def applyOnFile(file: File, f: (Source) => Any) = {
+    lazy val source = Source.fromFile(file)
     applyOnSource(source, f)
   }
 
