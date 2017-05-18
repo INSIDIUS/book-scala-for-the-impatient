@@ -7,7 +7,7 @@ object Ex3 {
 
   val entries = {
 
-    val source = Source.fromResource("unit4/words.txt")
+    val source = Source.fromResource("unit4/ex4words.txt")
     val words = source.getLines().mkString(" ").split(" ")
     source.close()
 
