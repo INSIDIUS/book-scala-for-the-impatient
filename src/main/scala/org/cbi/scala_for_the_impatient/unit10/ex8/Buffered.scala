@@ -1,11 +1,19 @@
 package org.cbi.scala_for_the_impatient.unit10.ex8
 
-import java.io.InputStreamReader
+import java.io.InputStream
 
 trait Buffered {
-  this: InputStreamReader =>
+  this: InputStream =>
 
-  //var pos = this.pos
+  lazy val size = 5
 
-  override def read(): Int = this.read() //Need Implement bufferization
+  var buff = Array.ofDim[Byte](size)
+  var position = 0
+  var offset = 0
+
+  override def read(): Int = {
+    if (position == offset) { this.read(buff, 0, size); offset += size }
+
+    val result = buff(position % size); position += 1; result
+  }
 }
