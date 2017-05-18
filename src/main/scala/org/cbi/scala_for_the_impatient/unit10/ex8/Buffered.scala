@@ -4,5 +4,8 @@ import java.io.InputStreamReader
 
 trait Buffered {
   this: InputStreamReader =>
+
+  //var pos = this.pos
+
   override def read(): Int = this.read() //Need Implement bufferization
 }
