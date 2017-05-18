@@ -4,7 +4,7 @@ import java.io.ByteArrayInputStream
 
 import org.specs2.mutable.Specification
 
-class IterableInputStreamTest extends Specification {
+object IterableInputStreamTest extends Specification {
 
   "U10 Ex10 IterableInputStreamTest" should {
     "read() method works correctly" in {
