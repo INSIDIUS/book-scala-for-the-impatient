@@ -2,7 +2,8 @@ package org.cbi.scala_for_the_impatient.unit10.ex9
 
 import java.io.InputStream
 
-trait Buffered extends InputStream with Logger {
+trait Buffered extends Logger {
+  this: InputStream =>
 
   lazy val size = 5
 
