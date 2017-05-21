@@ -28,18 +28,12 @@ case class Fraction(n: Int, d: Int) {
   }
 
   def *(that: Fraction): Fraction = Fraction(num * that.num, den * that.den)
-
   def /(that: Fraction): Fraction = Fraction(num * that.den, den * that.num)
-
   def unary_~(): Fraction = Fraction(den, num)
 }
 
 object Fraction {
-  def apply(n: Int, d: Int): Fraction = new Fraction(n, d)
-
   def gcd(a: Int, b: Int): Int = if (b == 0) a.abs else gcd(b, a % b)
-
   def lcm(a: Int, b: Int): Int = (a * b).abs / gcd(a, b)
-
   private def evalNum(f: Fraction, lcm: Int) = f.num * lcm / f.den
 }
