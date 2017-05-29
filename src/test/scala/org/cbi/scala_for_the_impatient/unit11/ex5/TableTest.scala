@@ -2,7 +2,7 @@ package org.cbi.scala_for_the_impatient.unit11.ex5
 
 import org.specs2.mutable.Specification
 
-class TableTest extends Specification {
+object TableTest extends Specification {
 
   "U11 Ex5 TableTest" should {
 
