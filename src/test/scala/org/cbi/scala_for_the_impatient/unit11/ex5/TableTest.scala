@@ -7,7 +7,11 @@ object TableTest extends Specification {
   "U11 Ex5 TableTest" should {
 
     "toString works correctly" in {
-      (Table() | "Java" | "Scala" || "Gosling" | "Odersky" || "JVM" | "JVM, .NET" toString) ===
+      (Table()
+                |   "Java"   | "Scala"
+               || "Gosling"  | "Odersky"
+               ||   "JVM"    | "JVM, .NET"
+        toString) ===
         "<table><tr><td>Java</td><td>Scala</td></tr><tr><td>Gosling</td><td>Odersky</td></tr><tr><td>JVM</td><td>JVM, .NET</td></tr></table>"
     }
 
