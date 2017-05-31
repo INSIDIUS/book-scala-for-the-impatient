@@ -5,22 +5,22 @@ import org.specs2.mutable.Specification
 object RichFileTest extends Specification {
 
   "U11 Ex9 RichFileTest" should {
-    "unapplySeq works correctly with Unix path" in {
+    "unapply works correctly with Unix path" in {
 
-      val RichFile(path, filename, ext) = "/home/insidius/myfile.txt"
+      val RichFile(richFile) = "/home/insidius/myfile.txt"
 
-      path === "/home/insidius"
-      filename === "myfile"
-      ext === "txt"
+      richFile.path === "/home/insidius"
+      richFile.filename === "myfile"
+      richFile.ext === "txt"
     }
 
-    "unapplySeq works correctly with Windows path" in {
+    "unapply works correctly with Windows path" in {
 
-      val RichFile(path, filename, ext) = "c:\\users\\insidius\\myfile.txt"
+      val RichFile(richFile) = "c:\\users\\insidius\\myfile.txt"
 
-      path === "c:\\users\\insidius"
-      filename === "myfile"
-      ext === "txt"
+      richFile.path === "c:\\users\\insidius"
+      richFile.filename === "myfile"
+      richFile.ext === "txt"
     }
   }
 }
