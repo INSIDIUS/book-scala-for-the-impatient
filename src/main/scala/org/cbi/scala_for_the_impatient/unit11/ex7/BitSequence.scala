@@ -5,8 +5,7 @@ case class BitSequence() {
 
   override def toString: String = s"BitSequence[${bitSet.toBinaryString}]"
 
-  private def checkBorders(index: Byte) =
-    if (index < 0 || index > 63) throw new IllegalArgumentException(s"index must be between 0 and 64, actual: $index")
+  def checkBorders(index: Int) = require(index > 0 || index < 64, s"index must be between 0 and 64, actual: $index")
 
   def apply(index: Byte) = {
     checkBorders(index)
