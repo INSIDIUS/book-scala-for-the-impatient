@@ -1,7 +1,7 @@
 package org.cbi.scala_for_the_impatient.unit13.ex4
 
-import org.specs2.mutable.Specification
 import org.cbi.scala_for_the_impatient.unit13.ex4.MapToSeqOfIntEx.fun
+import org.specs2.mutable.Specification
 
 class MapToSeqOfIntExTest extends Specification {
 
