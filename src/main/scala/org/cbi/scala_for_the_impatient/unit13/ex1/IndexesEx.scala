@@ -1,7 +1,6 @@
 package org.cbi.scala_for_the_impatient.unit13.ex1
 
-import scala.collection.mutable
-import scala.collection.immutable
+import scala.collection.{immutable, mutable}
 
 object IndexesEx {
 

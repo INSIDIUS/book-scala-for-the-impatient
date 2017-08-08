@@ -1,0 +1,18 @@
+switch(code){
+        case NodeFilter.FILTER_REJECT :
+        case NodeFilter.FILTER_SKIP : {return;}
+default : {
+        // fall through
+        }
+}
+
+
+        switch(code){
+        case NodeFilter.FILTER_REJECT :
+        case NodeFilter.FILTER_SKIP : {
+        return;
+        }
+default:{
+
+        }
+}
